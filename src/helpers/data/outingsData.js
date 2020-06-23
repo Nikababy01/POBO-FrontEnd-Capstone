@@ -21,4 +21,10 @@ const getOutingsByUid = (uid) => new Promise((resolve, reject) => {
 
 const getSingleOuting = (outingId) => axios.get(`${baseUrl}/outings/${outingId}.json`);
 
-export default { getOutingsByUid, getSingleOuting };
+const postOuting = (newOuting) => axios.post(`${baseUrl}/outings.json`, newOuting);
+
+export default { 
+  getOutingsByUid,
+  getSingleOuting,
+  postOuting,
+};

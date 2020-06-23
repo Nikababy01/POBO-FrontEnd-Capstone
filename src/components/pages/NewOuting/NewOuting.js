@@ -1,5 +1,8 @@
 import React from 'react';
 
+import authData from '../../../helpers/data/authData';
+import outingsData from '../../../helpers/data/outingsData';
+
 import './NewOuting.scss';
 
 class NewOuting extends React.Component {
@@ -69,7 +72,41 @@ class NewOuting extends React.Component {
 
   indoorChange = (e) => {
     e.preventDefault();
-    this.setState({ isIndoor: e.target.value });
+    this.setState({ isIndoor: e.target.checked });
+  }
+
+  saveOuting = (e) => {
+    e.preventDefault();
+    const {
+      name,
+      description,
+      city,
+      imageUrl,
+      isIndoor,
+      price,
+      seasonId,
+      address,
+      state,
+      zipcode,
+      ageId,
+    } = this.state;
+    const newOuting = {
+      name,
+      description,
+      city,
+      imageUrl,
+      isIndoor,
+      price,
+      seasonId,
+      address,
+      state,
+      zipcode,
+      ageId,
+      uid: authData.getUid(),
+    };
+    outingsData.postOuting(newOuting)
+      .then(() => this.props.history.push('/home'))
+      .catch((err) => console.error('unable to save scat:', err));
   }
 
   render() {
@@ -201,7 +238,7 @@ class NewOuting extends React.Component {
               />
             <label className="form-check-label" htmlFor="outing-indoor">Is this an Indoor Outing?</label>
             </div>
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <button className="btn btn-primary" onClick={this.saveOuting}>Save Outing</button>
             </form>
       </div>
 
