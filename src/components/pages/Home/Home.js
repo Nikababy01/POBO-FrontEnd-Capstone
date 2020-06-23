@@ -1,7 +1,7 @@
 import React from 'react';
 
 import authData from '../../../helpers/data/authData';
-import outingsData from '../../../helpers/data/outingData';
+import outingsData from '../../../helpers/data/outingsData';
 import OutingCard from '../../shared/OutingCard/OutingCard';
 
 import './Home.scss';

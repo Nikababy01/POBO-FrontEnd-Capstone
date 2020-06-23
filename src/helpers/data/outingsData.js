@@ -19,4 +19,6 @@ const getOutingsByUid = (uid) => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-export default { getOutingsByUid };
+const getSingleOuting = (outingId) => axios.get(`${baseUrl}/outings/${outingId}.json`);
+
+export default { getOutingsByUid, getSingleOuting };
