@@ -22,10 +22,16 @@ class Home extends React.Component {
     this.getOutings();
   }
 
+  removeOuting= (outingId) => {
+    outingsData.deleteOuting(outingId)
+      .then(() => this.getOutings())
+      .catch((err) => console.error('unable to delete outing: ', err));
+  }
+
   render() {
     const { outings } = this.state;
     const buildOutingCards = outings.map((outing) => (
-      <OutingCard outing={outing}/>
+      <OutingCard outing={outing} removeOuting={this.removeOuting}/>
     ));
     return (
       <div className="Home">
