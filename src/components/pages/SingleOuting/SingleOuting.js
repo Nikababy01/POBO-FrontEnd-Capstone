@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './SingleOuting.scss';
 import outingsData from '../../../helpers/data/outingsData';
@@ -24,8 +25,11 @@ class SingleOuting extends React.Component {
 
   render() {
     const { outing } = this.state;
+    const { outingId } = this.props.match.params;
+    const editLink = `/edit/${outingId}`;
     return (
       <div className="SingleOuting">
+        <Link className="btn btn-warning" to={editLink}><i className="fas fa-pencil-alt"></i></Link>
         <button className="btn btn-danger" onClick={this.removeOuting}><i className="fas fa-trash-alt"></i></button>
       <h1>{outing.name}</h1>
       <div className="row">

@@ -31,7 +31,7 @@ class Home extends React.Component {
   render() {
     const { outings } = this.state;
     const buildOutingCards = outings.map((outing) => (
-      <OutingCard outing={outing} removeOuting={this.removeOuting}/>
+      <OutingCard key={outing.id} outing={outing} removeOuting={this.removeOuting}/>
     ));
     return (
       <div className="Home">
