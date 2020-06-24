@@ -71,7 +71,6 @@ class NewOuting extends React.Component {
   }
 
   indoorChange = (e) => {
-    e.preventDefault();
     this.setState({ isIndoor: e.target.checked });
   }
 

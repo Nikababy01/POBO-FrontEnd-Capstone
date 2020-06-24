@@ -25,9 +25,12 @@ const postOuting = (newOuting) => axios.post(`${baseUrl}/outings.json`, newOutin
 
 const deleteOuting = (outingId) => axios.delete(`${baseUrl}/outings/${outingId}.json`);
 
+const putOuting = (outingId, updatedOuting) => axios.put(`${baseUrl}/outings/${outingId}.json`, updatedOuting);
+
 export default { 
   getOutingsByUid,
   getSingleOuting,
   postOuting,
   deleteOuting,
+  putOuting,
 };
