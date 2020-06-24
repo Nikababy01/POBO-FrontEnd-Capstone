@@ -15,10 +15,18 @@ class SingleOuting extends React.Component {
       .catch((err) => console.error('unable to get single outing: ', err));
   }
 
+  removeOuting = () => {
+    const { outingId } = this.props.match.params;
+    outingsData.deleteOuting(outingId)
+      .then(() => this.props.history.push('/home'))
+      .catch((err) => console.error('unable to delete outing: ', err));
+  }
+
   render() {
     const { outing } = this.state;
     return (
       <div className="SingleOuting">
+        <button className="btn btn-danger" onClick={this.removeOuting}><i className="fas fa-trash-alt"></i></button>
       <h1>{outing.name}</h1>
       <div className="row">
        <div className= "col-6">
