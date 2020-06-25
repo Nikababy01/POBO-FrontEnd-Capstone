@@ -15,6 +15,7 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 
 import './MyNavbar.scss';
+import POBO from '../../../../src/images/POBO.PNG';
 
 class MyNavbar extends React.Component {
   static propTypes = {
@@ -53,8 +54,9 @@ class MyNavbar extends React.Component {
     };
     return (
       <div className="MyNavbar">
-       <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">POBO</NavbarBrand>
+       <Navbar color="light" red expand="md" font-size="36px">
+          <NavbarBrand href="/"><img className="logo" src={POBO} alt="logo"></img>Welcome to POBO!</NavbarBrand>
+          <p><strong><em>Where parents discover what they have been missing.</em></strong></p>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={isOpen} navbar>
           {buildNavbar()}

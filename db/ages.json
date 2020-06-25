@@ -1,0 +1,18 @@
+{
+	"ageCategory1": {
+		"id": 1,
+		"age": "All"
+	},
+	"ageCategory2": {
+		"id": 2,
+		"age": "Under 3"
+	},
+	"ageCategory3": {
+		"id": 3,
+		"age": "Under 12"
+	},
+	"ageCategory4": {
+		"id": 4,
+		"age": "Adult"
+	}
+}
