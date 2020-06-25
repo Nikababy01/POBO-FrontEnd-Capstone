@@ -1,0 +1,18 @@
+{
+	"seasonCategory1": {
+		"id": 1,
+		"season": "All"
+	},
+	"seasonCategory2": {
+		"id": 2,
+		"season": "Summer"
+	},
+	"seasonCategory3": {
+		"id": 3,
+		"season": "Winter"
+	},
+	"seasonCategory4": {
+		"id": 4,
+		"season": "Holiday"
+	}
+}

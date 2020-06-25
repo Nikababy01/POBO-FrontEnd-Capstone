@@ -1,0 +1,37 @@
+{
+  "comment1": {
+    "uid":"XLGqRn8mClgZxRahtkjNOxHSmlh2",
+    "review": "This was so much fun! Thank you for the recommendation",
+    "isthumbs_up":"true",
+    "rating": "10",
+    "date":"",
+    "outingId":"outing1"
+  },
+  
+  "comment2": {
+    "uid":"XLGqRn8mClgZxRahtkjNOxHSmlh2",
+    "review": "I would do this again",
+    "isthumbs_up":"true",
+    "rating": "8",
+    "date":"",
+    "outingId":"outing2"
+  },
+  
+  "comment3": {
+    "uid":"156",
+    "review": "I hated this",
+    "isthumbs_up":"false",
+    "rating": "2",
+    "date":"",
+    "outingId":"outing1"
+  },
+  
+  "comment4": {
+    "uid":"155",
+    "review": "I would not go again, this was so boring",
+    "isthumbs_up":"false",
+    "rating": "5",
+    "date":"",
+    "outingId":"outing2"
+  }
+}

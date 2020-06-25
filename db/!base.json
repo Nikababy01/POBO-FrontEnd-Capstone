@@ -1,4 +1,8 @@
 {
   "parents": "monkey",
-  "outings": "butt"
+  "outings": "butt",
+  "ages": "age",
+  "comments": "comments",
+  "season":"season",
+  "parent": "parent"
 }
