@@ -23,7 +23,7 @@ class OutingCard extends React.Component {
           <div className="card-body">
             <h5 className="card-title">{outing.name}</h5>
             <Link className= "btn btn-info" to={singleLink}>View More</Link>
-            <Link className= "btn btn-warning" to={editLink}><i class="fas fa-pencil-alt"></i></Link>
+            <Link className= "btn btn-warning" to={editLink}><i className="fas fa-pencil-alt"></i></Link>
             <button className="btn btn-danger" onClick={() => removeOuting(outing.id)}><i className="fas fa-trash-alt"></i></button>
 
           </div>
