@@ -17,7 +17,7 @@ class OutingCard extends React.Component {
     const singleLink = `/outings/${outing.id}`;
     const editLink = `/edit/${outing.id}`;
     return (
-      <div className="OutingCard col-3">
+      <div className="OutingCard col-4">
         <div className="card">
             <img className="card-img-top" src={outing.imageUrl} alt="Outing Card"/>
           <div className="card-body">

@@ -1,0 +1,18 @@
+{
+	"all": {
+	  
+		"season": "All"
+	},
+	"summer": {
+		
+		"season": "Summer"
+	},
+	"winter": {
+		
+		"season": "Winter"
+	},
+	"holiday": {
+		
+		"season": "Holiday"
+	}
+}

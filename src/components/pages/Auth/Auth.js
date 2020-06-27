@@ -27,8 +27,8 @@ class Auth extends React.Component {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>Free Family Fun!</h3>
-      <p>Discover outings you have never seen advertised!</p>
+      <h3><strong>Free Family Fun!</strong></h3>
+      <h4><strong>Discover outings you have never seen advertised!</strong></h4>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -39,8 +39,8 @@ class Auth extends React.Component {
     />
 
     <Carousel.Caption>
-      <h3>Get out of the house without breaking your wallet</h3>
-      <p>Kids love to explore!</p>
+      <h3><strong>Get out of the house without breaking your wallet</strong></h3>
+      <h4>Kids love to explore!</h4>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -52,7 +52,7 @@ class Auth extends React.Component {
 
     <Carousel.Caption>
       <h3>Spend time with family!</h3>
-      <p>So many free options. Stay in the know!</p>
+      <h4>So many free options. Stay in the know!</h4>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

@@ -1,18 +1,16 @@
 {
-	"ageCategory1": {
-		"id": 1,
+	"all": {
 		"age": "All"
 	},
-	"ageCategory2": {
-		"id": 2,
+	"under3": {
 		"age": "Under 3"
 	},
-	"ageCategory3": {
-		"id": 3,
+	"under12": {
+
 		"age": "Under 12"
 	},
-	"ageCategory4": {
-		"id": 4,
+	"adult": {
+
 		"age": "Adult"
 	}
 }
