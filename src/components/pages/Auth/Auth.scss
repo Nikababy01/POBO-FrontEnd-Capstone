@@ -13,4 +13,9 @@
     color: red;
     font-family: cursive;
   }
-  
+  div.carousel-caption{
+    color: red;
+    z-index: 3px;
+    background-color: whitesmoke;
+    background-size: contain;
+  }
