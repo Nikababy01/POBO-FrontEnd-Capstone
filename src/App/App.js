@@ -18,6 +18,7 @@ import Home from '../components/pages/Home/Home';
 import NewOuting from '../components/pages/NewOuting/NewOuting';
 import EditOuting from '../components/pages/EditOuting/EditOuting';
 import SingleOuting from '../components/pages/SingleOuting/SingleOuting';
+import Comment from '../components/pages/Comment/Comment';
 
 import fbConnection from '../helpers/data/connection';
 
@@ -68,6 +69,7 @@ class App extends React.Component {
                 <Switch>
                   <PrivateRoute path='/home' component={Home} authed={authed} />
                   <PrivateRoute path='/new' component={NewOuting} authed={authed} />
+                  <PrivateRoute path='/comment' component={Comment} authed={authed} />
                   <PrivateRoute path='/edit/:outingId' component={EditOuting} authed={authed} />
                   <PrivateRoute path='/outings/:outingId' component={SingleOuting} authed={authed} />
                   <PublicRoute path='/auth' component={Auth} authed={authed} />

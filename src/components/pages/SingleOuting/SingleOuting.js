@@ -7,6 +7,7 @@ import outingsData from '../../../helpers/data/outingsData';
 class SingleOuting extends React.Component {
   state = {
     outing: {},
+    comment: {},
   }
 
   componentDidMount() {
@@ -27,6 +28,7 @@ class SingleOuting extends React.Component {
     const { outing } = this.state;
     const { outingId } = this.props.match.params;
     const editLink = `/edit/${outingId}`;
+    const commentLink = `/comment/${outingId}`;// added comment link here and below
     return (
       <div className="SingleOuting">
         <Link className="btn btn-warning" to={editLink}><i className="fas fa-pencil-alt"></i></Link>
@@ -40,6 +42,7 @@ class SingleOuting extends React.Component {
         <h2>Price: {outing.price}</h2>
         <p>{outing.description}</p>
         <p>Located: {outing.address} {outing.city}, {outing.state} {outing.zipcode}</p>
+        <Link className="btn btn-warning" to={commentLink}>Reviews</Link>
         </div>
         </div>
         </div>

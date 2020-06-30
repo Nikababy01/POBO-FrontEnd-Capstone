@@ -27,7 +27,7 @@
 //           };
 //           outings.push(daOuting);
 //         });
-//         resolve(missions);
+//         resolve(outings);
 //       });
 //     });
 //   })

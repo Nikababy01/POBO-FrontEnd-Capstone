@@ -2,36 +2,36 @@
   "comment1": {
     "uid":"XLGqRn8mClgZxRahtkjNOxHSmlh2",
     "review": "This was so much fun! Thank you for the recommendation",
-    "isthumbs_up":"true",
+    "isthumbsUp":"true",
     "rating": "10",
-    "date":"",
+    "date":"March 15th 2020, 6:26 pm",
     "outingId":"outing1"
   },
   
   "comment2": {
     "uid":"XLGqRn8mClgZxRahtkjNOxHSmlh2",
     "review": "I would do this again",
-    "isthumbs_up":"true",
+    "isthumbsUp":"true",
     "rating": "8",
-    "date":"",
+    "date":"March 17th 2020, 6:26 pm",
     "outingId":"outing2"
   },
   
   "comment3": {
     "uid":"156",
     "review": "I hated this",
-    "isthumbs_up":"false",
+    "isthumbsUp":"false",
     "rating": "2",
-    "date":"",
+    "date":"March 18th 2020, 6:26 pm",
     "outingId":"outing1"
   },
   
   "comment4": {
     "uid":"155",
     "review": "I would not go again, this was so boring",
-    "isthumbs_up":"false",
+    "isthumbsUp":"false",
     "rating": "5",
-    "date":"",
+    "date":"March 19th 2020, 6:26 pm",
     "outingId":"outing2"
   }
 }

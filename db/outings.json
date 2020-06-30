@@ -1,7 +1,7 @@
 {
   "outing1": {
     "name": "Travis Park",
-    "description": "This is a great place to take the kids fishing ",
+    "description": "This is a great place to take the kids fishing. Park closes at Dusk ",
     "imageUrl": "http://1.bp.blogspot.com/-kY8ACI8XyLA/VYBKdXV0J6I/AAAAAAAAAQY/l-5kJ-TwYvE/s1600/IMGP1332.JPG",
     "address": "876 ",
     "city": "Springfield",
@@ -10,12 +10,12 @@
     "ageId":"all",
     "seasonId":"summer ",
     "isIndoor": false,
-    "price":"free",
+    "price":"Free",
     "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
   },
   "outing2": {
     "name": "Cornerstone Indoor Playground",
-    "description": "This is a great place to take the kids for indoor fun! ",
+    "description": "This is a great place to take the kids for indoor fun! Open Daily 10AM- 10PM Closed on Sundays ",
     "imageUrl": "https://indywithkids.com/wp-content/uploads/2019/03/clc-fishers-indoor-playground-park-near-me.jpg",
     "address": "123 ",
     "city": "Nashville",
@@ -24,12 +24,12 @@
     "ageId":"under12",
     "seasonId":"all",
     "isIndoor": true,
-    "price":"free",
+    "price":"Free",
     "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
   },
   "outing3": {
     "name": "Stokes Library Movie Night",
-    "description": "This is a great place to take the kids for indoor fun! ",
+    "description": "This is every Tuesday Night from 6pm-9pm! Popcorn and drinks are served. Library Opens Daily 10AM-8PM",
     "imageUrl": "http://www.latahlibrary.org/images/bovill-youth-movie-night-01.jpg",
     "address": "123 ",
     "city": "Springfield",
@@ -38,12 +38,12 @@
     "ageId":"all",
     "seasonId":"summer ",
     "isIndoor": false,
-    "price":"free",
+    "price":"Free",
     "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
  },
  "outing4": {
   "name": "Martin Luther King spray park",
-  "description": "This is a great place to take the kids for outdoor fun! ",
+  "description": "This is a great place to take the kids for outdoor fun! Opens daily at 10AM-5PM ",
   "imageUrl": "https://i1.wp.com/smokeybarn.com/wp-content/uploads/2018/02/IMG_2549.jpg?resize=511%2C299&ssl=1",
   "address": "123",
   "city": "Springfield",
@@ -52,12 +52,12 @@
   "ageId":"all",
   "seasonId":"summer ",
   "isIndoor": false,
-  "price":"free",
+  "price":"Free",
   "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
 },
 "outing5": {
   "name": "Chuckee Cheese Restaurant",
-  "description": "This is a great place to take the kids for indoor fun! ",
+  "description": "This is a great place to take the kids for indoor fun! Open Daily 10AM- 10PM ",
   "imageUrl": "https://i.ytimg.com/vi/3SqHIimzsaQ/maxresdefault.jpg",
   "address": "  ",
   "city": "Springfield",
@@ -66,12 +66,12 @@
   "ageId":"all",
   "seasonId":"all",
   "isIndoor": true,
-  "price":"free",
+  "price":"Free",
   "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
 },
 "outing6": {
   "name": "Wii at the library",
-  "description": "This is a great place to take the kids for indoor fun! ",
+  "description": "This is a great place to take the kids for indoor fun! Open Daily 10AM- 10PM ",
   "imageUrl": "http://4.bp.blogspot.com/_6O2JgLFq3_M/S84l4tpRcAI/AAAAAAAAAgc/8apKF2AMdJE/s1600/april+2010+020.jpg",
   "address": "123",
   "city": "Springfield",
@@ -80,12 +80,12 @@
   "ageId":"all",
   "seasonId":"summer ",
   "isIndoor": true,
-  "price":"free",
+  "price":"Free",
   "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
 },
 "outing7": {
   "name": "Lego at the library",
-  "description": "This is a great place to take the kids for indoor fun! ",
+  "description": "This is every Thursday from 5PM-7PM! The Libary Opens Daily from 10AM-8PM",
   "imageUrl": "https://i.pinimg.com/originals/13/b1/82/13b1822546e184a788afd2ee167b43ab.jpg",
   "address": "123",
   "city": "Springfield",
@@ -94,12 +94,12 @@
   "ageId":"all",
   "seasonId":"summer ",
   "isIndoor": true,
-  "price":"free",
+  "price":"Free",
   "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
 },
 "outing8": {
   "name": "Jungle gym at the zoo",
-  "description": "This is a great place to take the kids for outdoor fun! ",
+  "description": "This is a great place to take the kids for outdoor fun! Opens Daily 10AM- 10PM ",
   "imageUrl": "https://images.trvl-media.com/media/content/shared/images/travelguides/destination/178291/Nashville-Zoo-24657.jpg",
   "address": "123",
   "city": "Springfield",
@@ -108,12 +108,12 @@
   "ageId":"under12",
   "seasonId":"summer ",
   "isIndoor": false,
-  "price":"free",
+  "price":"Free",
   "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
 },
 "outing9": {
   "name": "Drive In Movie",
-  "description": "This is a great place to take the kids for outdoor fun! ",
+  "description": "This is a great place to take the kids for outdoor fun! Open Daily 7PM- 12AM ",
   "imageUrl": "https://www.narcity.com/u/2019/06/30/7f305960fb263476f2cc3d5c0d0e7115.jpg_1200x630.jpg",
   "address": "  ",
   "city": "Springfield",
@@ -122,12 +122,12 @@
   "ageId":"all",
   "seasonId":"summer ",
   "isIndoor": false,
-  "price":"free",
+  "price":"Free",
   "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
 },
 "outing10": {
   "name": "Rivergate Roller Skate",
-  "description": "This is a great place to take the kids for indoor fun! ",
+  "description": "This is a great place to take the kids for indoor fun! OpenS Daily 10AM- 10PM",
   "imageUrl": "http://s3-media4.ak.yelpcdn.com/bphoto/XFH-8VUTaYciK2lxslFfEg/o.jpg",
   "address": "123",
   "city": "Springfield",
@@ -136,12 +136,12 @@
   "ageId":"all",
   "seasonId":"summer ",
   "isIndoor": true,
-  "price":"free",
+  "price":"Free",
   "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
 },
 "outing11": {
   "name": "Safari Park",
-  "description": "This is a great place to take the kids for outdoor fun! ",
+  "description": "This is a great place to take the kids for outdoor fun! Open Daily 10AM- 6PM",
   "imageUrl": "https://www.gannett-cdn.com/presto/2018/11/20/PNAS/540960ae-48c1-46e8-825b-13a70eb6b2e4-Tennessee_Safari_Park-01.JPG?width=540&height=405&fit=bounds&auto=webp",
   "address": "123",
   "city": "Springfield",
@@ -150,12 +150,12 @@
   "ageId":"all",
   "seasonId":"summer ",
   "isIndoor": false,
-  "price":"free",
+  "price":"Free",
   "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
 },
 "outing12": {
   "name": "Ice Skating",
-  "description": "This is a great place to take the kids for indoor fun! ",
+  "description": "This is a great place to take the kids for indoor fun! Open Daily 10AM- 8PM ",
   "imageUrl": "https://bostonlandingdevelopment.com/wp-content/uploads/2016/05/IceArena_Offerings_BirthdayParties2.jpg",
   "address": "123",
   "city": "Springfield",
@@ -164,12 +164,12 @@
   "ageId":"all",
   "seasonId":"summer ",
   "isIndoor": true,
-  "price":"free",
+  "price":"Free",
   "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
 },
 "outing13": {
   "name": "Opryland Hotel Delta Riverboat",
-  "description": "This is a great place to take the kids for indoor fun! ",
+  "description": "This is a great place to take the kids for indoor fun! Open Daily 10AM- 10PM",
   "imageUrl": "https://hungrytravelgirl.files.wordpress.com/2012/09/boat-ride.jpg",
   "address": "123",
   "city": "Springfield",
@@ -178,12 +178,12 @@
   "ageId":"all",
   "seasonId":"summer ",
   "isIndoor": true,
-  "price":"free",
+  "price":"Free",
   "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
 },
 "outing14": {
   "name": "Wave Country Wave Pool",
-  "description": "This is a great place to take the kids for outdoor fun! ",
+  "description": "This is a great place to take the kids for outdoor fun! Open Daily 10AM- 6PM",
   "imageUrl": "https://www.pigeon-forge-vacations.com/images/DollywoodSplashCountryWavePool2.jpg",
   "address": "123",
   "city": "Springfield",
@@ -192,12 +192,12 @@
   "ageId":"all",
   "seasonId":"summer ",
   "isIndoor": false,
-  "price":"free",
+  "price":"Free",
   "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
 },
 "outing15": {
   "name": "KirkPatrick Splash Pad",
-  "description": "This is a great place to take the kids for outdoor fun! ",
+  "description": "This is a great place to take the kids for outdoor fun! Open Daily 10AM- 5PM ",
   "imageUrl": "https://root.coreylittle.com/williamsonsource/2016/03/wcpr-splash-park-2.jpg",
   "address": "123",
   "city": "Springfield",
@@ -206,12 +206,12 @@
   "ageId":"under12",
   "seasonId":"summer ",
   "isIndoor": false,
-  "price":"free",
+  "price":"Free",
   "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
 },
 "outing16": {
   "name": "Springfield Greenways",
-  "description": "This is a great place to take the kids for indoor fun! ",
+  "description": "This is a great place to take the kids for indoor fun! PARK CLOSES AT DUSK",
   "imageUrl": "https://www.traillink.com/photos/tweetsie-trail_108942_st.jpg",
   "address": "123",
   "city": "Springfield",
@@ -220,12 +220,12 @@
   "ageId":"all",
   "seasonId":"summer ",
   "isIndoor": false,
-  "price":"free",
+  "price":"Free",
   "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
 },
 "outing17": {
   "name": "Family Fun Center",
-  "description": "This is a great place to take the kids for indoor fun! ",
+  "description": "This is a great place to take the kids for indoor fun! Open Daily 10AM- 10PM",
   "imageUrl": "http://www.funpennsylvania.com/uploads/files/2012/07/go-karts-philly-arnolds-family-fun-center.png",
   "address": "  ",
   "city": "Springfield",
@@ -234,12 +234,12 @@
   "ageId":"all",
   "seasonId":"summer ",
   "isIndoor": false,
-  "price":"free",
+  "price":"Free",
   "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
 },
 "outing18": {
   "name": "Arnold's Family Fun Center",
-  "description": "This is a great place to take the kids for indoor fun! ",
+  "description": "This is a great place to take the kids for indoor fun! Opens Daily 10AM- 10PM ",
   "imageUrl": "https://www.discovernepa.com/wp-content/uploads/2018/06/DN-TTN-DT-ArnoldsFamilyFunCenter-01.jpg",
   "address": "  ",
   "city": "Springfield",
@@ -248,12 +248,12 @@
   "ageId":"all",
   "seasonId":"all",
   "isIndoor": true,
-  "price":"free",
+  "price":"Free",
   "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
 },
 "outing19": {
   "name": "Glow in the Dark Golf",
-  "description": "This is a great place to take the kids for indoor fun! ",
+  "description": "This is a great place to take the kids for indoor fun! Opens Daily 10AM- 10PM",
   "imageUrl": "https://orlandoinformer.com/wp-content/uploads/2019/05/Putting-Edge-Golf-mini-golf-course.jpg",
   "address": "123 ",
   "city": "Springfield",
@@ -262,7 +262,7 @@
   "ageId":"all",
   "seasonId":"summer ",
   "isIndoor": true,
-  "price":"free",
+  "price":"Free",
   "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
 },
 "outing20": {
@@ -276,12 +276,12 @@
   "ageId":"all",
   "seasonId":"summer ",
   "isIndoor": false,
-  "price":"free",
+  "price":"Free",
   "uid": "123"
  },
  "outing21": {
   "name": "Indoor Amusement Park",
-  "description": "This is a great place to take the kids for indoor fun! Every 1st Wednesday Night. 6pm-9pm",
+  "description": "This is a great place to take the kids for indoor fun! Every 1st Wednesday Night Free Admission. 6pm-9pm",
   "imageUrl": "https://www.discovernepa.com/wp-content/uploads/2018/06/DN-TTN-DT-ArnoldsFamilyFunCenter-10.jpg",
   "address": "NSS",
   "city": "Nashville",
@@ -290,7 +290,7 @@
   "ageId":"all",
   "seasonId":"summer ",
   "isIndoor": true,
-  "price":"free",
+  "price":"Free",
   "uid": "XLGqRn8mClgZxRahtkjNOxHSmlh2"
  }
 }
