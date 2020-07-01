@@ -1,0 +1,97 @@
+{
+  "outingcomment1": {
+    "commentId":"comment1",
+    "outingId":"outing17"
+  },
+  
+  "outingcomment2": {
+    "commentId":"comment2",
+     "outingId":"outing5"
+  },
+  
+  "outingcomment3": {
+    "commentId":"comment3",
+    "outingId":"outing5"
+  },
+  
+  "outingcomment4": {
+    "commentId": "comment4",
+    "outingId":"outing5"
+  },
+  "outingcomment5": {
+    "commentId":"comment5",
+    "outingId":"outing13"
+  },
+  
+  "outingcomment6": {
+    "commentId":"comment6",
+     "outingId":"outing13"
+  },
+  
+  "outingcomment7": {
+    "commentId":"comment7",
+    "outingId":"outing10"
+  },
+  
+  "outingcomment8": {
+    "commentId": "comment8",
+    "outingId":"outing10"
+  },
+  "outingcomment9": {
+    "commentId":"comment9",
+    "outingId":"outing10"
+  },
+  
+  "outingcomment10": {
+    "commentId":"comment10",
+     "outingId":"outing8"
+  },
+  
+  "outingcomment11": {
+    "commentId":"comment11",
+    "outingId":"outing8"
+  },
+  
+  "outingcomment12": {
+    "commentId": "comment12",
+    "outingId":"outing8"
+   },
+   "outingcomment13": {
+    "commentId":"comment13",
+     "outingId":"outing18"
+  },
+  
+  "outingcomment14": {
+    "commentId":"comment14",
+    "outingId":"outing18"
+  },
+  
+  "outingcomment15": {
+    "commentId": "comment15",
+    "outingId":"outing18"
+   },
+   "outingcomment16": {
+    "commentId":"comment16",
+     "outingId":"outing1"
+  },
+  
+  "outingcomment17": {
+    "commentId":"comment17",
+    "outingId":"outing1"
+  },
+  
+  "outingcomment18": {
+    "commentId": "comment18",
+    "outingId":"outing1"
+   },
+   "outingcomment19": {
+    "commentId":"comment19",
+     "outingId":"outing3"
+  },
+  
+  "outingcomment20": {
+    "commentId":"comment20",
+    "outingId":"outing3"
+  }
+  
+}

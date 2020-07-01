@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './SingleOuting.scss';
 import outingsData from '../../../helpers/data/outingsData';
+import smash from '../../../helpers/data/smash';
 
 class SingleOuting extends React.Component {
   state = {
@@ -12,7 +13,7 @@ class SingleOuting extends React.Component {
 
   componentDidMount() {
     const { outingId } = this.props.match.params;
-    outingsData.getSingleOuting(outingId)
+    smash.getParentComment(outingId)
       .then((response) => this.setState({ outing: response.data }))
       .catch((err) => console.error('unable to get single outing: ', err));
   }
@@ -28,7 +29,8 @@ class SingleOuting extends React.Component {
     const { outing } = this.state;
     const { outingId } = this.props.match.params;
     const editLink = `/edit/${outingId}`;
-    const commentLink = `/comment/${outingId}`;// added comment link here and below
+    const commentLink = `/commentform/${outingId}`;// added comment link here and below
+    const allcomments = `/comment/${outingId}`;
     return (
       <div className="SingleOuting">
         <Link className="btn btn-warning" to={editLink}><i className="fas fa-pencil-alt"></i></Link>
@@ -42,7 +44,8 @@ class SingleOuting extends React.Component {
         <h2>Price: {outing.price}</h2>
         <p>{outing.description}</p>
         <p>Located: {outing.address} {outing.city}, {outing.state} {outing.zipcode}</p>
-        <Link className="btn btn-warning" to={commentLink}>Reviews</Link>
+        <Link className="btn btn-warning" to={allcomments}> See Reviews</Link>
+        <Link className="btn btn-success" to={commentLink}>Add Reviews</Link>
         </div>
         </div>
         </div>
