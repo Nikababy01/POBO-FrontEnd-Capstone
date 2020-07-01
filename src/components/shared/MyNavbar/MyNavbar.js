@@ -15,7 +15,7 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 
 import './MyNavbar.scss';
-import POBO from '../../../../src/images/POBO.PNG';
+import POBO from '../../../images/POBO.PNG';
 
 class MyNavbar extends React.Component {
   static propTypes = {

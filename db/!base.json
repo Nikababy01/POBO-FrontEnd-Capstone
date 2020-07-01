@@ -3,5 +3,6 @@
   "outings": "outing",
   "ages": "age",
   "comments": "comment",
-  "seasons":"season"
+  "seasons":"season",
+  "outingComments": "outingcomment"
   }
