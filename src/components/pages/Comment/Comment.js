@@ -5,6 +5,7 @@ import './Comment.scss';
 // import authData from '../../../helpers/data/authData';
 
 import smash from '../../../helpers/data/smash';
+// import commentsData from '../../../helpers/data/commentsData';
 // import SingleOuting from '../SingleOuting/SingleOuting';
 
 class Comment extends React.Component {
@@ -21,6 +22,13 @@ class Comment extends React.Component {
         .catch((err) => console.error('unable to get comments: ', err));
     }
 
+    removeComment = () => {
+      const { commentId } = this.props.match.params;
+      smash.completelyRemoveComment(commentId)
+        .then(() => this.props.history.push('/home'))
+        .catch((err) => console.error('unable to delete comment: ', err));
+    }
+
     render() {
       const { comments } = this.state;
       const buildComments = () => comments.map((item) => (
@@ -29,7 +37,7 @@ class Comment extends React.Component {
       <h4>{item.review}</h4>
       <p>{item.name}</p>
       <p>Date: {item.date}</p>
-      <button>test</button>
+      <button className="btn btn-info" onClick={this.removeComment}>Delete Review</button>
       </div>
       </div>
       ));

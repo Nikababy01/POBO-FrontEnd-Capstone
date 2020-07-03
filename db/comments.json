@@ -2,7 +2,7 @@
   "comment1": {
     "uid":"XLGqRn8mClgZxRahtkjNOxHSmlh2",
     "name": "Monique Bass",
-		"email_address": "monique.bass01@gmail.com",
+		"emailAddress": "monique.bass01@gmail.com",
     "review": "This was so much fun! Thank you for the recommendation!",
     "isthumbsUp":"true",
     "rating": "10",
@@ -13,7 +13,7 @@
   "comment2": {
     "uid":"XLGqRn8mClgZxRahtkjNOxHSmlh2",
     "name": "Monique Bass",
-		"email_address": "monique.bass01@gmail.com",
+		"emailAddress": "monique.bass01@gmail.com",
     "review": "I would do this again!",
     "isthumbsUp":"true",
     "rating": "8",
@@ -24,7 +24,7 @@
   "comment3": {
     "uid":"156",
     "name": "Chasity Cunningham",
-		"email_address": "Chaz01@gmail.com",
+		"emailAddress": "Chaz01@gmail.com",
     "review": "I hated this!",
     "isthumbsUp":"false",
     "rating": "2",
@@ -35,7 +35,7 @@
   "comment4": {
     "uid":"155",
     "name": "Tyree Cummins",
-		"email_address": "Tybaby01@gmail.com",
+		"emailAddress": "Tybaby01@gmail.com",
     "review": "I would not go again, this was so boring",
     "isthumbsUp":"false",
     "rating": "5",
@@ -45,7 +45,7 @@
   "comment5": {
     "uid":"155",
     "name": "Tyree Cummins",
-		"email_address": "Tybaby01@gmail.com",
+		"emailAddress": "Tybaby01@gmail.com",
     "review": "I would not go again, this was so boring",
     "isthumbsUp":"false",
     "rating": "5",
@@ -55,7 +55,7 @@
   "comment6": {
     "uid":"156",
     "name": "Chasity Cunningham",
-		"email_address": "Chaz01@gmail.com",
+		"emailAddress": "Chaz01@gmail.com",
     "review": "This was a SPECTACULAR!",
     "isthumbsUp":"false",
     "rating": "5",
@@ -65,7 +65,7 @@
   "comment7": {
     "uid":"XLGqRn8mClgZxRahtkjNOxHSmlh2",
     "name": "Monique Bass",
-    "email_address": "monique.bass01@gmail.com",
+    "emailAddress": "monique.bass01@gmail.com",
     "review": "Don't Waste Your Time!",
     "isthumbsUp":"false",
     "rating": "5",
@@ -75,7 +75,7 @@
   "comment8": {
     "uid":"156",
     "name": "Chasity Cunningham",
-		"email_address": "Chaz01@gmail.com",
+		"emailAddress": "Chaz01@gmail.com",
     "review": "I wish I could say something good about this but I can't!",
     "isthumbsUp":"false",
     "rating": "5",
@@ -85,7 +85,7 @@
   "comment9": {
     "uid":"155",
     "name": "Tyree Cummins",
-		"email_address": "Tybaby01@gmail.com",
+		"emailAddress": "Tybaby01@gmail.com",
     "review": "Almost the best day ever!",
     "isthumbsUp":"false",
     "rating": "5",
@@ -95,7 +95,7 @@
   "comment10": {
     "uid":"156",
     "name": "Chasity Cunningham",
-		"email_address": "Chaz01@gmail.com",
+		"emailAddress": "Chaz01@gmail.com",
     "review": "Life couldn't get any better than this event!",
     "isthumbsUp":"false",
     "rating": "5",
@@ -105,7 +105,7 @@
   "comment11": {
     "uid":"155",
     "name": "Tyree Cummins",
-		"email_address": "Tybaby01@gmail.com",
+		"emailAddress": "Tybaby01@gmail.com",
     "review": "What a Snooze!",
     "isthumbsUp":"false",
     "rating": "5",
@@ -115,7 +115,7 @@
   "comment12": {
     "uid":"XLGqRn8mClgZxRahtkjNOxHSmlh2",
     "name": "Monique Bass",
-    "email_address": "monique.bass01@gmail.com",
+    "emailAddress": "monique.bass01@gmail.com",
     "review": "This was false advertising. This was not Free!",
     "isthumbsUp":"false",
     "rating": "5",
@@ -125,7 +125,7 @@
   "comment13": {
     "uid":"XLGqRn8mClgZxRahtkjNOxHSmlh2",
     "name": "Monique Bass",
-    "email_address": "monique.bass01@gmail.com",
+    "emailAddress": "monique.bass01@gmail.com",
     "review": "I Loved everything about this. You have got to experience this!",
     "isthumbsUp":"false",
     "rating": "5",
@@ -135,7 +135,7 @@
   "comment14": {
     "uid":"155",
     "name": "Tyree Cummins",
-		"email_address": "Tybaby01@gmail.com",
+		"emailAddress": "Tybaby01@gmail.com",
     "review": "I would not go again, this was so boring",
     "isthumbsUp":"false",
     "rating": "5",
@@ -145,7 +145,7 @@
   "comment15": {
     "uid":"156",
     "name": "Chasity Cunningham",
-		"email_address": "Chaz01@gmail.com",
+		"emailAddress": "Chaz01@gmail.com",
     "review": "Just what I needed!",
     "isthumbsUp":"false",
     "rating": "5",
@@ -155,7 +155,7 @@
   "comment16": {
     "uid":"XLGqRn8mClgZxRahtkjNOxHSmlh2",
     "name": "Monique Bass",
-    "email_address": "monique.bass01@gmail.com",
+    "emailAddress": "monique.bass01@gmail.com",
     "review": "My Kids want to go everyday!",
     "isthumbsUp":"false",
     "rating": "5",
@@ -165,7 +165,7 @@
   "comment17": {
     "uid":"156",
     "name": "Chasity Cunningham",
-		"email_address": "Chaz01@gmail.com",
+		"emailAddress": "Chaz01@gmail.com",
     "review": "I would not go again, this was so boring",
     "isthumbsUp":"false",
     "rating": "5",
@@ -175,7 +175,7 @@
   "comment18": {
     "uid":"155",
     "name": "Tyree Cummins",
-		"email_address": "Tybaby01@gmail.com",
+		"emailAddress": "Tybaby01@gmail.com",
     "review": "The Kids loved it!",
     "isthumbsUp":"false",
     "rating": "5",
@@ -185,7 +185,7 @@
   "comment19": {
     "uid":"155",
     "name": "Tyree Cummins",
-		"email_address": "Tybaby01@gmail.com",
+		"emailAddress": "Tybaby01@gmail.com",
     "review": "Simple and Easy. This was so fun!",
     "isthumbsUp":"false",
     "rating": "5",
@@ -195,7 +195,7 @@
   "comment20": {
     "uid":"XLGqRn8mClgZxRahtkjNOxHSmlh2",
     "name": "Monique Bass",
-    "email_address": "monique.bass01@gmail.com",
+    "emailAddress": "monique.bass01@gmail.com",
     "review": "Just ok!",
     "isthumbsUp":"false",
     "rating": "5",

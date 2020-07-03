@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './SingleOuting.scss';
-import outingsData from '../../../helpers/data/outingsData';
 import smash from '../../../helpers/data/smash';
+import outingsData from '../../../helpers/data/outingsData';
 
 class SingleOuting extends React.Component {
   state = {
@@ -45,7 +45,7 @@ class SingleOuting extends React.Component {
         <p>{outing.description}</p>
         <p>Located: {outing.address} {outing.city}, {outing.state} {outing.zipcode}</p>
         <Link className="btn btn-warning" to={allcomments}> See Reviews</Link>
-        <Link className="btn btn-success" to={commentLink}>Add Reviews</Link>
+        <Link className="btn btn-info" to={commentLink}>Add Reviews</Link>
         </div>
         </div>
         </div>

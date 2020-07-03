@@ -10,7 +10,8 @@ class CommentForm extends React.Component {
     review: '',
     isthumbsUp: '',
     rating: '',
-    formOpen: false,
+    name: '',
+    email_address: '',
   }
 
   componentDidMount() {
@@ -19,6 +20,16 @@ class CommentForm extends React.Component {
       .then((response) => this.setState({ comment: response.data }))
       .catch((err) => console.error('unable to get single comment: ', err));
   }
+
+   nameChange = (e) => {
+     e.preventDefault();
+     this.setState({ name: e.target.value });
+   }
+
+   emailAddressChange = (e) => {
+     e.preventDefault();
+     this.setState({ emailAddress: e.target.value });
+   }
 
   reviewChange = (e) => {
     e.preventDefault();
@@ -38,15 +49,19 @@ ratingChange = (e) => {
   saveComment = (e) => {
     e.preventDefault();
     const {
+      name,
+      emailAddress,
       review,
       isthumbsUp,
       rating,
     } = this.state;
-    const {
-      outingId,
-    } = this.props;
+    // const {
+    //   outingId,
+    // } = this.props;
     const newComment = {
-      outingId,
+      name,
+      emailAddress,
+      outingId: this.props.outingId,
       review,
       isthumbsUp,
       rating,
@@ -63,13 +78,34 @@ ratingChange = (e) => {
       review,
       isthumbsUp,
       rating,
+      name,
+      emailAddress,
     } = this.state;
 
     return (
       <div className="CommentForm col-12">
-        <h1>All Reviews</h1>
-          <button className="btn btn-success" onClick={() => this.setState({ formOpen: true })}>Add a Review</button>
-          <form className="col-6 offset-3 text-left">
+        <h1>Add a Review</h1>
+         <form className="col-6 offset-3 text-left">
+          <div className="form-group">
+            <label htmlFor="comment-name">Name</label>
+            <input
+              type="text"
+              className="form-control"
+              id="comment-name"
+              value={name}
+              onChange={this.nameChange}
+            />
+            </div>
+            <div className="form-group">
+            <label htmlFor="comment-emailAddress">Enter Email</label>
+            <input
+              type="text"
+              className="form-control"
+              id="comment-emailAddress"
+              value={emailAddress}
+              onChange={this.nameChange}
+            />
+            </div>
           <div className="form-group">
             <label htmlFor="comment-review">Add Review Comment</label>
             <input
