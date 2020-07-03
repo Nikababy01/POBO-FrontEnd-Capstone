@@ -7,12 +7,11 @@ const getOutingCommentsByOutingId = (outingId) => new Promise((resolve, reject) 
   axios.get(`${baseUrl}/outingComments.json?orderBy="outingId"&equalTo="${outingId}"`)
     .then((response) => {
       const fboutingComments = response.data;
-      console.error('outingcommentsbyoutingid', fboutingComments);
       const outingComments = [];
       if (fboutingComments) {
-        Object.keys(fboutingComments).forEach((commentId) => {
-          fboutingComments[commentId].id = commentId;
-          outingComments.push(fboutingComments[commentId]);
+        Object.keys(fboutingComments).forEach((outingCommentId) => {
+          fboutingComments[outingCommentId].id = outingCommentId;
+          outingComments.push(fboutingComments[outingCommentId]);
         });
       }
       resolve(outingComments);
@@ -20,4 +19,6 @@ const getOutingCommentsByOutingId = (outingId) => new Promise((resolve, reject) 
     .catch((err) => reject(err));
 });
 
-export default { getOutingCommentsByOutingId };
+const deleteOutingComment = (outingCommentId) => axios.delete(`${baseUrl}/outingsComments/${outingCommentId}.json`);
+
+export default { getOutingCommentsByOutingId, deleteOutingComment };
