@@ -18,7 +18,6 @@ class CommentForm extends React.Component {
 
   componentDidMount() {
     const { outingId } = this.props.match.params;
-    console.log('myouting', outingId);
     commentsData.getCommentsByOutingId(outingId)
       .then((response) => this.setState({ comment: response.data, outingId }))
       .catch((err) => console.error('unable to get single comment: ', err));
@@ -59,7 +58,6 @@ ratingChange = (e) => {
       rating,
     } = this.state;
     const { outingId } = this.state;
-    console.log('comment outingId', outingId);
     const newComment = {
       name,
       emailAddress,
@@ -72,12 +70,10 @@ ratingChange = (e) => {
     };
     commentsData.postComment(newComment)
       .then((newCommentResponse) => {
-        console.log('new', newCommentResponse);
         const newOutingComment = {
           outingId,
           commentId: newCommentResponse.data.name,
         };
-        console.log('newOut', newOutingComment);
         outingCommentsData.postOutingComment(newOutingComment);
         this.props.history.push('/home');
       })

@@ -36,11 +36,8 @@ class Home extends React.Component {
 
   render() {
     const filteredCity = this.state.outings.filter(
-      (outing) => {
-        return outing.city.indexOf(this.state.search) !== -1;
-      },
+      (outing) => outing.city.indexOf(this.state.search) !== -1,
     );
-    // const { outings } = this.state;
     const buildOutingCards = filteredCity.map((outing) => (
       <OutingCard key={outing.id} outing={outing} removeOuting={this.removeOuting}/>
     ));
@@ -52,6 +49,8 @@ class Home extends React.Component {
           value={this.state.search}
           onChange={this.updateSearch.bind(this)}
           />
+          <h3>List of Outings "{filteredCity.length}"</h3>
+
         </div>
         <div className= "d-flex flex-wrap">
           {buildOutingCards}
