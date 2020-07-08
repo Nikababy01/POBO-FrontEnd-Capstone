@@ -31,8 +31,6 @@ class Comment extends React.Component {
     removeComment = (e) => {
       const commentId = e.target.id;
       const outingcommentid = e.target.getAttribute('outingcommentid');
-      console.log('outingcommentid', outingcommentid);
-      console.log('comment.js commentId', commentId, e.target.id);
       commentsData.deleteComment(commentId)
         .then(() => {
           outingCommentsData.deleteOutingComment(outingcommentid);
@@ -43,7 +41,6 @@ class Comment extends React.Component {
 
     render() {
       const { comments } = this.state;
-      console.log('all comments', comments);
       const buildComments = () => comments.map((comment) => (
         <div className= "container" key={comment.id} >
         <div className="user-review">
