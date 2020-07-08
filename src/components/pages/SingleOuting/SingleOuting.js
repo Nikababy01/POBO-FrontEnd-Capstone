@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import StarRating from '../StarRating/StarRating';
 
 import './SingleOuting.scss';
 import smash from '../../../helpers/data/smash';
@@ -44,6 +45,7 @@ class SingleOuting extends React.Component {
         <h2>Price: {outing.price}</h2>
         <p>{outing.description}</p>
         <p>Located: {outing.address} {outing.city}, {outing.state} {outing.zipcode}</p>
+        <StarRating key={outing.id}></StarRating>
         <Link className="btn btn-warning" to={allcomments}> See Reviews</Link>
         <Link className="btn btn-info" to={commentLink}>Add Reviews</Link>
         </div>

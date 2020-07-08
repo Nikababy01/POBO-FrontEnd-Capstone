@@ -5,13 +5,12 @@ import './StarRating.scss';
 
 const StarRating = () => {
   const [rating, setRating] = useState(null);
-  const [hover, setHover] = useState(null);
+  // const [hover, setHover] = useState(null);
 
   return (
 <div>
   {[...Array(5)].map((star, i) => {
     const ratingValue = i + 1;
-
     return (
     <label>
       <input
@@ -21,17 +20,18 @@ const StarRating = () => {
       onClick={() => setRating(ratingValue)}
       />
       <FaStar className="star"
-      color={ratingValue < (hover || rating) ? 'light-blue' : 'grey'}
-      size={100} 
-      onMouseEnter={() => setHover(ratingValue)}
-      onMouseLeave={() => setHover(null)}
+      color={ratingValue <= rating ? '#ffc107' : '#e4e5e9'}
+      size={50}
+      // onMouseEnter={() => setHover(ratingValue)}
+     // onMouseLeave={() => setHover(null)}
       />
     </label>
     );
   })}
-  <p>The rating is {rating}.</p>
+  <h3>Rate This Outing</h3>
+<p>This rating is {rating} stars!</p>
 </div>
   );
 };
 
-export default { StarRating };
+export default StarRating;

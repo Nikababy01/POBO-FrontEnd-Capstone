@@ -5,6 +5,8 @@ import './Comment.scss';
 // import authData from '../../../helpers/data/authData';
 
 import smash from '../../../helpers/data/smash';
+import commentsData from '../../../helpers/data/commentsData';
+import outingCommentsData from '../../../helpers/data/outingCommentsData';
 // import commentsData from '../../../helpers/data/commentsData';
 // import SingleOuting from '../SingleOuting/SingleOuting';
 
@@ -13,31 +15,42 @@ class Comment extends React.Component {
       comments: [],
     }
 
-    componentDidMount() {
-      const { outingId } = this.props.match.params;
-      smash.getParentComment(outingId)
-        .then((response) => {
-          this.setState({ comments: response.reviewComment });
-        })
-        .catch((err) => console.error('unable to get comments: ', err));
-    }
+   buildReviewPage = () => {
+     const { outingId } = this.props.match.params;
+     smash.getParentComment(outingId)
+       .then((response) => {
+         this.setState({ comments: response.reviewComment });
+       })
+       .catch((err) => console.error('unable to get comments: ', err));
+   }
 
-    removeComment = () => {
-      const { commentId } = this.props.match.params;
-      smash.completelyRemoveComment(commentId)
-        .then(() => this.props.history.push('/home'))
+   componentDidMount() {
+     this.buildReviewPage();
+   }
+
+    removeComment = (e) => {
+      const commentId = e.target.id;
+      const outingcommentid = e.target.getAttribute('outingcommentid');
+      console.log('outingcommentid', outingcommentid);
+      console.log('comment.js commentId', commentId, e.target.id);
+      commentsData.deleteComment(commentId)
+        .then(() => {
+          outingCommentsData.deleteOutingComment(outingcommentid);
+          this.buildReviewPage();
+        })
         .catch((err) => console.error('unable to delete comment: ', err));
     }
 
     render() {
       const { comments } = this.state;
-      const buildComments = () => comments.map((item) => (
-        <div className= "container">
+      console.log('all comments', comments);
+      const buildComments = () => comments.map((comment) => (
+        <div className= "container" key={comment.id} >
         <div className="user-review">
-      <h4>{item.review}</h4>
-      <p>{item.name}</p>
-      <p>Date: {item.date}</p>
-      <button className="btn btn-info" onClick={this.removeComment}>Delete Review</button>
+      <h4>{comment.review}</h4>
+      <p>{comment.name}</p>
+      <p>Date: {comment.date}</p>
+      <button className="btn btn-info m-2" outingcommentid={comment.outingCommentId} id={comment.id} onClick={this.removeComment}>Delete Review</button>
       </div>
       </div>
       ));

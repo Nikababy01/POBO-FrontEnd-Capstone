@@ -3,9 +3,16 @@
 
 }
 .user-review{
-border: solid;
-border-width: 3px;
-border-color: lightblue;
+//border: solid;
+background-color: lightblue;
+border-width: 1px;
+border-radius: 20px;
+//border-color: lightblue;
 font-style: italic;
 color: black;
+margin-bottom: 10px;
+}
+
+h2{
+  color: red;
 }

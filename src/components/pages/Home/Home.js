@@ -3,6 +3,7 @@ import React from 'react';
 import authData from '../../../helpers/data/authData';
 import outingsData from '../../../helpers/data/outingsData';
 import OutingCard from '../../shared/OutingCard/OutingCard';
+import smash from '../../../helpers/data/smash';
 
 import './Home.scss';
 
@@ -23,7 +24,7 @@ class Home extends React.Component {
   }
 
   removeOuting= (outingId) => {
-    outingsData.deleteOuting(outingId)
+    smash.completelyRemoveOuting(outingId)
       .then(() => this.getOutings())
       .catch((err) => console.error('unable to delete outing: ', err));
   }

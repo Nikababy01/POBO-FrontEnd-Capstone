@@ -12,6 +12,7 @@ const getParentComment = (outingId) => new Promise((resolve, reject) => {
               const selectedComments = [];
               outingCommentResponse.forEach((comment) => {
                 const foundreview = commentResponse.find((x) => x.id === comment.commentId);
+                foundreview.outingCommentId = comment.id;
                 selectedComments.push(foundreview);
               });
               const newOuting = { ...outingResponse };
@@ -23,16 +24,22 @@ const getParentComment = (outingId) => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-const completelyRemoveComment = (commentId) => new Promise((resolve, reject) => {
-  commentsData.deleteComment(commentId)
+const completelyRemoveOuting = (outingId) => new Promise((resolve, reject) => {
+  outingsData.deleteOuting(outingId)
     .then(() => {
-      outingCommentsData.getOutingCommentsByOutingId(commentId)
-        .then((comments) => {
-          comments.forEach((comment) => outingCommentsData.deleteOutingComment(comment.id));
+      outingCommentsData.getOutingCommentsByOutingId(outingId)
+        .then((outingCommentResponse) => {
+          console.log('outingCommentResponse', outingCommentResponse);
+          outingCommentResponse.forEach((outComment) => {
+            outingCommentsData.deleteOutingComment(outComment.id);
+            const { commentId } = outComment;
+            console.log('smash', commentId);
+            commentsData.deleteComment(commentId);
+          });
           resolve();
         });
     })
     .catch((err) => reject(err));
 });
 
-export default { getParentComment, completelyRemoveComment };
+export default { getParentComment, completelyRemoveOuting };

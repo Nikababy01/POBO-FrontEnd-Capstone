@@ -19,6 +19,30 @@ const getOutingCommentsByOutingId = (outingId) => new Promise((resolve, reject) 
     .catch((err) => reject(err));
 });
 
-const deleteOutingComment = (outingCommentId) => axios.delete(`${baseUrl}/outingsComments/${outingCommentId}.json`);
+const getOutingComments = () => new Promise((resolve, reject) => {
+  axios.get(`${baseUrl}/outingComments.json`)
+    .then((response) => {
+      const fboutingComments = response.data;
+      const outingComments = [];
+      if (fboutingComments) {
+        Object.keys(fboutingComments).forEach((outingCommentId) => {
+          fboutingComments[outingCommentId].id = outingCommentId;
+          outingComments.push(fboutingComments[outingCommentId]);
+        });
+      }
+      resolve(outingComments);
+    })
+    .catch((err) => reject(err));
+});
 
-export default { getOutingCommentsByOutingId, deleteOutingComment };
+const deleteOutingComment = (outingCommentsId) => axios.delete(`${baseUrl}/outingComments/${outingCommentsId}.json`);
+const postOutingComment = (newOutingComment) => axios.post(`${baseUrl}/outingComments.json`, newOutingComment);
+const putOutingComment = (outingId, updatedOutingComment) => axios.put(`${baseUrl}/outingComments/${outingId}.json`, updatedOutingComment);
+
+export default {
+  getOutingCommentsByOutingId,
+  deleteOutingComment,
+  getOutingComments,
+  postOutingComment,
+  putOutingComment,
+};

@@ -1,12 +1,11 @@
 import React from 'react';
-import './CommentForm.scss';
+import './EditComment.scss';
 
 import moment from 'moment';
 import authData from '../../../helpers/data/authData';
 import commentsData from '../../../helpers/data/commentsData';
-import outingCommentsData from '../../../helpers/data/outingCommentsData';
 
-class CommentForm extends React.Component {
+class EditComment extends React.Component {
   state = {
     review: '',
     isthumbsUp: '',
@@ -17,10 +16,20 @@ class CommentForm extends React.Component {
   }
 
   componentDidMount() {
-    const { outingId } = this.props.match.params;
-    console.log('myouting', outingId);
-    commentsData.getCommentsByOutingId(outingId)
-      .then((response) => this.setState({ comment: response.data, outingId }))
+    const { commentId } = this.props.match.params;
+    console.log('myouting', commentId);
+    commentsData.getSingleComment(commentId)
+      .then((response) => {
+        const comment = response.data;
+        this.setState({
+          review: comment.review,
+          isthumbsUp: comment.isthumbsUp,
+          rating: comment.rating,
+          name: comment.name,
+          emailAddress: comment.emailAddress,
+          outingId: comment.outingId,
+        });
+      })
       .catch((err) => console.error('unable to get single comment: ', err));
   }
 
@@ -49,7 +58,7 @@ ratingChange = (e) => {
   this.setState({ rating: e.target.value });
 }
 
-  saveComment = (e) => {
+  updateComment = (e) => {
     e.preventDefault();
     const {
       name,
@@ -57,10 +66,11 @@ ratingChange = (e) => {
       review,
       isthumbsUp,
       rating,
+      outingId,
     } = this.state;
-    const { outingId } = this.state;
-    console.log('comment outingId', outingId);
-    const newComment = {
+    const { commentId } = this.state;
+    console.log('comment commentId', commentId);
+    const updatedComment = {
       name,
       emailAddress,
       outingId,
@@ -70,18 +80,9 @@ ratingChange = (e) => {
       date: moment().format('LL'),
       uid: authData.getUid(),
     };
-    commentsData.postComment(newComment)
-      .then((newCommentResponse) => {
-        console.log('new', newCommentResponse);
-        const newOutingComment = {
-          outingId,
-          commentId: newCommentResponse.data.name,
-        };
-        console.log('newOut', newOutingComment);
-        outingCommentsData.postOutingComment(newOutingComment);
-        this.props.history.push('/home');
-      })
-      .catch((err) => console.error('unable to save comment:', err));
+    commentsData.putComment(commentId, updatedComment)
+      .then(() => this.props.history.push('/home'))
+      .catch((err) => console.error('unable to update comment:', err));
   }
 
   render() {
@@ -95,7 +96,7 @@ ratingChange = (e) => {
 
     return (
       <div className="CommentForm col-12">
-        <h1>Add a Review</h1>
+        <h1>Edit Review</h1>
          <form className="col-6 offset-3 text-left">
           <div className="form-group">
             <label htmlFor="comment-name">Name</label>
@@ -147,11 +148,11 @@ ratingChange = (e) => {
               onChange={this.ratingChange}
             />
             </div>
-            <button className="btn btn-primary" onClick={this.saveComment}>Save Comment</button>
+            <button className="btn btn-primary" onClick={this.updateComment}>Save Comment</button>
             </form>
       </div>
     );
   }
 }
 
-export default CommentForm;
+export default EditComment;
