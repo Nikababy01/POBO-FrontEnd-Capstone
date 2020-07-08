@@ -4,7 +4,7 @@ import { FaStar } from 'react-icons/fa';
 import './StarRating.scss';
 
 const StarRating = () => {
-  const [rating, setRating] = useState(null);
+  const [rating, setRating] = useState(3);
   // const [hover, setHover] = useState(null);
 
   return (

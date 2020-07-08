@@ -92,6 +92,64 @@
   "outingcomment20": {
     "commentId":"comment20",
     "outingId":"outing3"
-  }
-  
+  },
+  "outingcomment21": {
+    "commentId":"comment21",
+    "outingId":"outing17"
+  },
+  "outingcomment22": {
+    "commentId":"comment22",
+    "outingId":"outing17"
+  },
+  "outingcomment23": {
+    "commentId":"comment23",
+    "outingId":"outing12"
+ },
+ "outingcomment24": {
+  "commentId":"comment24",
+  "outingId":"outing12"
+},
+"outingcomment25": {
+  "commentId":"comment25",
+  "outingId":"outing12"
+},
+
+"outingcomment26": {
+  "commentId":"comment23",
+  "outingId":"outing7"
+},
+"outingcomment27": {
+"commentId":"comment24",
+"outingId":"outing7"
+},
+"outingcomment28": {
+"commentId":"comment25",
+"outingId":"outing7"
+ },
+ 
+"outingcomment29": {
+  "commentId":"comment29",
+  "outingId":"outing2"
+},
+"outingcomment30": {
+"commentId":"comment30",
+"outingId":"outing2"
+},
+"outingcomment31": {
+"commentId":"comment31",
+"outingId":"outing2"
+ },
+ 
+"outingcomment32": {
+  "commentId":"comment32",
+  "outingId":"outing11"
+},
+"outingcomment33": {
+"commentId":"comment32",
+"outingId":"outing11"
+},
+"outingcomment34": {
+"commentId":"comment34",
+"outingId":"outing11"
+ }
 }

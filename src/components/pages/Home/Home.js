@@ -10,6 +10,11 @@ import './Home.scss';
 class Home extends React.Component {
   state = {
     outings: [],
+    search: '',
+  }
+
+  updateSearch(event) {
+    this.setState({ search: event.target.value.substr(0, 20) });
   }
 
   getOutings = () => {
@@ -30,12 +35,24 @@ class Home extends React.Component {
   }
 
   render() {
-    const { outings } = this.state;
-    const buildOutingCards = outings.map((outing) => (
+    const filteredCity = this.state.outings.filter(
+      (outing) => {
+        return outing.city.indexOf(this.state.search) !== -1;
+      },
+    );
+    // const { outings } = this.state;
+    const buildOutingCards = filteredCity.map((outing) => (
       <OutingCard key={outing.id} outing={outing} removeOuting={this.removeOuting}/>
     ));
     return (
       <div className="Home">
+        <div className="citysearch">
+          <h3>Search by City</h3>
+          <input type="text"
+          value={this.state.search}
+          onChange={this.updateSearch.bind(this)}
+          />
+        </div>
         <div className= "d-flex flex-wrap">
           {buildOutingCards}
         </div>
