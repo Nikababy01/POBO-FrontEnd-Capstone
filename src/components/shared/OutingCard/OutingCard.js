@@ -21,11 +21,11 @@ class OutingCard extends React.Component {
         <div className="card">
             <img className="card-img-top" src={outing.imageUrl} alt="Outing Card"/>
           <div className="card-body">
+            <p className="card-city">{outing.city},{outing.state}</p>
             <h5 className="card-title">{outing.name}</h5>
-            <Link className= "btn btn-info" to={singleLink}>View More</Link>
-            <Link className= "btn btn-warning" to={editLink}><i className="fas fa-pencil-alt"></i></Link>
-            <button className="btn btn-danger" onClick={() => removeOuting(outing.id)}><i className="fas fa-trash-alt"></i></button>
-
+            <Link className= "btn btn-info event-view" to={singleLink}>View More</Link>
+            <Link className= "btn btn-warning event-view" to={editLink}><i className="fas fa-pencil-alt"></i></Link>
+            <button className="btn btn-danger event-view" onClick={() => removeOuting(outing.id)}><i className="fas fa-trash-alt"></i></button>
           </div>
           </div>
       </div>
