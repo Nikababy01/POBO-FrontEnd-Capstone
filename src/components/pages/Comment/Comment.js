@@ -52,7 +52,7 @@ class Comment extends React.Component {
       </div>
       ));
       return (
-        <div className="Comment">
+        <div className="Comment col-12">
         <h2>REVIEWS</h2>
           <div className= "d-flex flex-wrap">
             {buildComments()}
