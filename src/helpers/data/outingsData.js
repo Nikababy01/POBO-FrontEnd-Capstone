@@ -4,7 +4,7 @@ import firebaseConfig from '../apiKeys.json';
 const baseUrl = firebaseConfig.firebaseKeys.databaseURL;
 
 const getOutingsByUid = (uid) => new Promise((resolve, reject) => {
-  axios.get(`${baseUrl}/outings.json?orderBy="uid"&equalTo="${uid}"`)
+  axios.get(`${baseUrl}/outings.json`)
     .then((response) => {
       const fbOutings = response.data;
       const outings = [];
