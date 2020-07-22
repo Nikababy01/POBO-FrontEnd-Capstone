@@ -1,6 +1,6 @@
 import React from 'react';
 
-import authData from '../../../helpers/data/authData';
+// import authData from '../../../helpers/data/authData';
 import outingsData from '../../../helpers/data/outingsData';
 import OutingCard from '../../shared/OutingCard/OutingCard';
 import smash from '../../../helpers/data/smash';
@@ -18,8 +18,8 @@ class Home extends React.Component {
   }
 
   getOutings = () => {
-    const uid = authData.getUid();
-    outingsData.getOutingsByUid(uid)
+    // const uid = authData.getUid();
+    outingsData.getOutingsByUid()
       .then((outings) => this.setState({ outings }))
       .catch((err) => console.error('unable to get outings: ', err));
   }
